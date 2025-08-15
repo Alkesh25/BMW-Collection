@@ -1,0 +1,395 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+.nav a {
+    margin-right: 30px;
+    color: #bbb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #0f8efb;
+}
+
+.btn-primary {
+    background-color: #0f8efb;
+    color: white;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0962b0;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+    background: url('https://cdn.bmwblog.com/wp-content/uploads/2021/06/2021-bmw-i4-e-drive40-15.jpg') no-repeat center center/cover;
+    position: relative;
+    margin-top: 80px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    color: white;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.btn-large {
+    font-size: 1.25rem;
+    padding: 15px 45px;
+    text-transform: uppercase;
+}
+
+.models {
+    max-width: 1100px;
+    margin: 60px auto 40px;
+    padding: 0 30px;
+}
+
+.models h2 {
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.model-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.model-card {
+    background: #1f1f1f;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(15, 142, 251, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.model-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(15, 142, 251, 0.5);
+}
+
+.model-card img {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #333;
+}
+
+.model-card h3 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0f8efb;
+}
+
+.model-card p {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.footer {
+    text-align: center;
+    padding: 25px 0;
+    background: #000;
+    color: #555;
+    font-size: 0.9rem;
+}
+.hero-section {
+    height: 100vh;
+    background-image: url('https://cdn.bmwblog.com/wp-content/uploads/2021/06/2021-bmw-i4-e-drive40-15.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.btn-primary.btn-large {
+    background-color: #0f8efb;
+    color: white;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.btn-primary.btn-large:hover {
+    background-color: #0962b0;
+}
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(1.8);
+    
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 0 20px;
+    max-width: 700px;
+    transform: translateY(-80px);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.btn-primary.btn-large {
+    background-color: #0f8efb;
+    color: white;
+    padding: 14px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #111;
+    /* dark background */
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #00aaff;
+    /* BMW blue */
+    margin: 10px 0 5px;
+}
+
+.card p {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive: Tablet */
+@media (max-width: 992px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+.card {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+    border: 2px solid transparent;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 170, 255, 0.5);
+    border: 2px solid #00aaff;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    color: #00aaff;
+    margin: 10px 0 5px;
+    transition: color 0.4s ease;
+}
+
+.card:hover h3 {
+    color: #66d0ff;
+}
